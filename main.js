@@ -16,7 +16,7 @@ app.on('ready', function(){
   mainWindow = new BrowserWindow({});
   // Load html in window
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'mainWindow.html'),
+    pathname: path.join(__dirname, 'DhiaDesktopApplication.html'),
     protocol: 'file:',
     slashes:true
   }));
@@ -39,7 +39,7 @@ function createAddWindow(){
     title:'Add Shopping List Item'
   });
   addWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'addWindow.html'),
+    pathname: path.join(__dirname, 'AddingPage.html'),
     protocol: 'file:',
     slashes:true
   }));
